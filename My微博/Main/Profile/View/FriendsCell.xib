@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="gTV-IL-0wX" customClass="FriendsCell">
+            <rect key="frame" x="0.0" y="0.0" width="173" height="191"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="173" height="191"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VP0-ai-RWU">
+                        <rect key="frame" x="47" y="8" width="80" height="118"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="CgY-JC-QqK"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5z1-26-NeW">
+                        <rect key="frame" x="8" y="134" width="157" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="Zvi-z2-nma"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="81p-qL-Bfu">
+                        <rect key="frame" x="8" y="162" width="157" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="suM-Q8-fLX"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="VP0-ai-RWU" secondAttribute="trailing" constant="29" id="1cJ-6C-QFI"/>
+                <constraint firstAttribute="bottom" secondItem="81p-qL-Bfu" secondAttribute="bottom" constant="8" id="40y-zk-unx"/>
+                <constraint firstItem="81p-qL-Bfu" firstAttribute="top" secondItem="5z1-26-NeW" secondAttribute="bottom" constant="7" id="ALB-cR-ymf"/>
+                <constraint firstItem="5z1-26-NeW" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="IIT-ag-p02"/>
+                <constraint firstItem="VP0-ai-RWU" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="29" id="Pc0-9j-Enu"/>
+                <constraint firstAttribute="trailing" secondItem="5z1-26-NeW" secondAttribute="trailing" constant="8" id="ed1-eu-6mA"/>
+                <constraint firstItem="5z1-26-NeW" firstAttribute="top" secondItem="VP0-ai-RWU" secondAttribute="bottom" constant="8" id="grw-ly-TFC"/>
+                <constraint firstItem="VP0-ai-RWU" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="lwj-yV-igM"/>
+                <constraint firstItem="VP0-ai-RWU" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="mod-ce-ziY"/>
+                <constraint firstItem="81p-qL-Bfu" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="pcR-As-INR"/>
+                <constraint firstItem="VP0-ai-RWU" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="qtQ-md-J46"/>
+                <constraint firstItem="VP0-ai-RWU" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="29" id="umR-4f-UnP"/>
+                <constraint firstAttribute="trailing" secondItem="81p-qL-Bfu" secondAttribute="trailing" constant="8" id="yaV-bH-QDM"/>
+            </constraints>
+            <size key="customSize" width="173" height="191"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="1cJ-6C-QFI"/>
+                    <exclude reference="Pc0-9j-Enu"/>
+                    <exclude reference="qtQ-md-J46"/>
+                    <exclude reference="umR-4f-UnP"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="FollowersLabel" destination="81p-qL-Bfu" id="MRi-Zc-v7l"/>
+                <outlet property="nameLabel" destination="5z1-26-NeW" id="uFv-4j-unS"/>
+                <outlet property="userImage" destination="VP0-ai-RWU" id="pSt-CG-VBp"/>
+            </connections>
+            <point key="canvasLocation" x="285.5" y="353.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

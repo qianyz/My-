@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="yR9-bu-rBY">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--Base Nav Controller-->
+        <scene sceneID="LJh-qQ-h9S">
+            <objects>
+                <navigationController id="yR9-bu-rBY" customClass="BaseNavController" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2wR-f2-eWN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="EDj-IX-s4m" kind="relationship" relationship="rootViewController" id="anw-cX-n4E"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tlv-aI-rr9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-224" y="445"/>
+        </scene>
+        <!--发现-->
+        <scene sceneID="VWm-w8-dv8">
+            <objects>
+                <viewController id="EDj-IX-s4m" customClass="DiscoverViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xpj-3P-0Uk"/>
+                        <viewControllerLayoutGuide type="bottom" id="98g-XH-dNO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aEQ-w7-C08">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qkx-bp-xYx">
+                                <rect key="frame" x="44" y="92" width="125" height="125"/>
+                                <state key="normal" title="Button" image="附近微博.jpg"/>
+                                <connections>
+                                    <action selector="buttonAction:" destination="EDj-IX-s4m" eventType="touchUpInside" id="e4h-Co-x7d"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                    </view>
+                    <navigationItem key="navigationItem" title="发现" id="vjj-2L-u76"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NFU-Hu-fzi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="454" y="440"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="附近微博.jpg" width="184" height="184"/>
+    </resources>
+</document>
